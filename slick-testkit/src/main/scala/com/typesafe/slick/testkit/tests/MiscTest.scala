@@ -1,9 +1,9 @@
 package com.typesafe.slick.testkit.tests
 
 import org.junit.Assert._
-import com.typesafe.slick.testkit.util.{TestkitTest, TestDB}
+import com.typesafe.slick.testkit.util.TestkitJdbcTest
 
-class MiscTest(val tdb: TestDB) extends TestkitTest {
+class MiscTest extends TestkitJdbcTest {
   import tdb.profile.simple._
 
   override val reuseInstance = true

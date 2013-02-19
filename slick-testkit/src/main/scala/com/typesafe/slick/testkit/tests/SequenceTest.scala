@@ -2,9 +2,9 @@ package com.typesafe.slick.testkit.tests
 
 import scala.language.postfixOps
 import org.junit.Assert._
-import com.typesafe.slick.testkit.util.{TestkitTest, TestDB}
+import com.typesafe.slick.testkit.util.TestkitJdbcTest
 
-class SequenceTest(val tdb: TestDB) extends TestkitTest {
+class SequenceTest extends TestkitJdbcTest {
   import tdb.profile.simple._
 
   override val reuseInstance = true

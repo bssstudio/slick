@@ -1,9 +1,9 @@
 package com.typesafe.slick.testkit.tests
 
 import org.junit.Assert._
-import com.typesafe.slick.testkit.util.{TestkitTest, TestDB}
+import com.typesafe.slick.testkit.util.TestkitJdbcTest
 
-class MutateTest(val tdb: TestDB) extends TestkitTest {
+class MutateTest extends TestkitJdbcTest {
   import tdb.profile.simple._
 
   def test = ifCap(jcap.mutable) {

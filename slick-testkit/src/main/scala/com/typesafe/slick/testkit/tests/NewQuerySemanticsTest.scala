@@ -3,9 +3,9 @@ package com.typesafe.slick.testkit.tests
 import org.junit.Assert._
 import scala.slick.jdbc.StaticQuery._
 import scala.slick.ast._
-import com.typesafe.slick.testkit.util.{TestkitTest, TestDB}
+import com.typesafe.slick.testkit.util.TestkitJdbcTest
 
-class NewQuerySemanticsTest(val tdb: TestDB) extends TestkitTest {
+class NewQuerySemanticsTest extends TestkitJdbcTest {
   import tdb.profile.simple._
 
   val doRun = true

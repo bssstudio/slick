@@ -1,9 +1,9 @@
 package com.typesafe.slick.testkit.tests
 
 import org.junit.Assert._
-import com.typesafe.slick.testkit.util.{TestkitTest, TestDB}
+import com.typesafe.slick.testkit.util.TestkitJdbcTest
 
-class TemplateTest(val tdb: TestDB) extends TestkitTest {
+class TemplateTest extends TestkitJdbcTest {
   import tdb.profile.simple._
 
   object Users extends Table[(Int, String)]("users") {
